@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Shekhar Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,6 +16,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+		#Education-content-container{
+			.hidden-education {
+			display: none; /* Initially hide the additional content */
+			}
+
+			#load-more-btn-education {
+			display: block;
+			margin: 10px 0;
+			}
+		}
+		#Work-content-container{
+			.hidden-work {
+			display: none; /* Initially hide the additional content */
+			}
+
+			#load-more-btn-work {
+			display: block;
+			margin: 10px 0;
+			}
+		}
+			
 </style>
 </head>
 <body class="w3-black">
@@ -64,12 +85,45 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Shekhar</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <!-- work experience -->
+	
+    <!-- educartion -->
+	
+	<div id="Work-content-container">
+		<h2 class="w3-text-light-grey">Work experience</h2>
+		<hr style="width:200px" class="w3-opacity">
+		<h3>Senior software engineer- <b>GEP Worldwide</b></h3>
+		<p>I was responsible for creating and developing essential elements of an inventory management solution within an Advanced Shipping Notice web application. In my capacity as a senior software engineer, I provided leadership and direction to the development team, ensuring the successful implementation of the project's core features and alignment with project goals. I also oversaw multiple features from the design phase through to implementation. Furthermore, I optimized various workflow processes, including those related to shipments, search functionality, and push notifications.
+		</p>
+		<h3>Software engineer- <b>GEP Worldwide</b></h3>
+		
+		<div class="hidden-work">
+			<p>I served as a software developer. To improved project efficiency, I worked on the transformation of the project's architecture from a modular design to a more streamlined plugin-based structure in anguler. This strategic shift not only enhanced development efficiency but also resulted in a remarkable 40% reduction in development time. Additionally, I leveraged my technical skills to design and develop a user-friendly API/UI for managing forecast dates within the DemandPlanning project. I initiated and successfully implemented an automation system that efficiently read Excel data and seamlessly integrated it into Neo4j, effectively reducing manual workload by a substantial 60%. These experiences underscore my proficiency in software development, process optimization, and project management, showcasing my ability to drive innovation and efficiency in complex projects.
+			</p>
+			<button id="show-less-btn-work" onclick="showLess('work')">Load Less</button>
+		</div>
+  	</div>
+	  <button id="load-more-btn-work" onclick="loadMore('work')">Load More</button>
+
+	<div id="Education-content-container">
+		<h2 class="w3-text-light-grey">Education</h2>
+		<hr style="width:200px" class="w3-opacity">
+		<h3>Masters in computer science- <b>Virginia Tech, USA</b></h3>
+		<p>I am currently pursuing a Master of Engineering in Computer Science with a concentration in Software Development and applications. This program is designed to equip me with advanced knowledge and skills in computer science, specifically focusing on the development of software solutions and applications. </br></br>
+			I believe that my ongoing Master's program has equipped me with a strong foundation in software development and applications, making me a valuable candidate for roles that require a deep understanding of cutting-edge technologies and the ability to develop robust software solutions.		
+		</p>
+		<h3>Bachelor of technology- <b>Motilal Nehru National Institute of Technology Allahabad, India</b></h3>
+		<div class="hidden-education">
+			<p>Throughout my coursework, I have gained a deep understanding of software engineering principles, programming languages, and software architecture. I have had hands-on experience in designing and implementing software systems that meet the evolving needs of the digital landscape.</br></br>
+				This academic pursuit has not only broadened my theoretical knowledge but has also provided me with practical experience through job projects, and coursework assignments. I am passionate about leveraging my education to create innovative software solutions that can address real-world challenges and contribute to the ever-evolving field of computer science.	
+			</p>
+		<!-- Add more content as needed -->
+		<button id="show-less-btn-education" onclick="showLess('education')">Load Less</button>
+		</div>
+  	</div>
+	  <button id="load-more-btn-education" onclick="loadMore('education')">Load More</button>
+
+
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Web Development</p>
     <div class="w3-white">
@@ -86,16 +140,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
+        <span class="w3-xlarge">3 year</span><br>
+        Work Experience
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
+        <span class="w3-xlarge">20+</span><br>
+        Projects
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
+        <span class="w3-xlarge">5+</span><br>
+        Industry Project
       </div>
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">150+</span><br>
@@ -108,62 +162,46 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </button>
     
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <h3 class="w3-padding-16 w3-text-light-grey">Projects</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
+      <div class="w3-half w3-margin-bottom project-div">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32"> Customer Churn Prediction</li>
+		  <div style="height: 25vh;">
+		  <li class="w3-padding-16">Developed a Customer Churn Prediction model using ML algorithms to analyze and prevent
+			customer attrition, contributing to proactive retention strategies</li>
+          <li class="w3-padding-16">Logistic
+			Regression, Decision Tree Classifier, SVC, RandomForest Classifier, and K-Neighbors Classifier</li>
+			</div>
+			<li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
           </li>
         </ul>
       </div>
 
       <div class="w3-half">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32"> Peer review web application</li>
+			<div style="height: 25vh;">
+          <li class="w3-padding-16">Application for reviewing and taking feedback on resumes and paper</li>
+          <li class="w3-padding-16">HTML, CSS, Javascript, React, NodeJS</li>
+			</div>
+		  <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
           </li>
         </ul>
       </div>
     <!-- End Grid/Pricing tables -->
     </div>
     
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <!-- <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">My Photos</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="/w3images/wedding.jpg" style="width:100%">
@@ -177,10 +215,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <img src="/w3images/wedding.jpg" style="width:100%">
         <img src="/w3images/p6.jpg" style="width:100%">
       </div>
-    <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+  </div> -->
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -188,9 +224,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Falls Church, Virginia, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00000000</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: shekhark221@gmail.com</p>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
@@ -201,7 +237,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i> feature under development
         </button>
       </p>
     </form>
@@ -216,12 +252,47 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<script>
+	function loadMore(type) {
+		if(type=='education'){
+			var hiddenContent = document.querySelector('.hidden-education');
+   		 	var loadMoreBtn = document.getElementById('load-more-btn-education');
+    
+			hiddenContent.style.display = 'block';
+			loadMoreBtn.style.display = 'none';
+		}
+		if(type=='work'){
+			var hiddenContent = document.querySelector('.hidden-work');
+   		 	var loadMoreBtn = document.getElementById('load-more-btn-work');
+    
+			hiddenContent.style.display = 'block';
+			loadMoreBtn.style.display = 'none';
+		}
+    
+  }
+
+  function showLess(type) {
+	if(type=='education'){
+		var hiddenContent = document.querySelector('.hidden-education');
+    	var loadMoreBtn = document.getElementById('load-more-btn-education');
+		hiddenContent.style.display = 'none';
+		loadMoreBtn.style.display = 'block';
+	}
+	if(type=='work'){
+		var hiddenContent = document.querySelector('.hidden-work');
+    	var loadMoreBtn = document.getElementById('load-more-btn-work');
+		hiddenContent.style.display = 'none';
+		loadMoreBtn.style.display = 'block';
+	}
+   
+  }
+  </script>
 
 </body>
 </html>
