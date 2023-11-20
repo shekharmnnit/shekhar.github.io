@@ -36,6 +36,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 			margin: 10px 0;
 			}
 		}
+    #Project-content-container{
+			.hidden-project {
+			display: none; /* Initially hide the additional content */
+			}
+
+			#load-more-btn-project {
+			display: block;
+			margin: 10px 0;
+			}
+		}
 			
 </style>
 </head>
@@ -129,13 +139,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Mobile Development</p>
+    <p class="w3-wide">Angular</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Photoshop</p>
+    <p class="w3-wide"> .Net Framework</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
@@ -161,39 +171,152 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <i class="fa fa-download"></i> Download Resume
     </button>
     
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Projects</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom project-div">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32"> Customer Churn Prediction</li>
-		  <div style="height: 25vh;">
-		  <li class="w3-padding-16">Developed a Customer Churn Prediction model using ML algorithms to analyze and prevent
-			customer attrition, contributing to proactive retention strategies</li>
-          <li class="w3-padding-16">Logistic
-			Regression, Decision Tree Classifier, SVC, RandomForest Classifier, and K-Neighbors Classifier</li>
-			</div>
-			<li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
-          </li>
-        </ul>
-      </div>
+    <div id="Project-content-container">
+        <!-- project section start -->
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">Projects</h3>
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom project-div">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32"> Customer Churn Prediction</li>
+          <div style="height: 25vh;">
+          <li class="w3-padding-16">Developed a Customer Churn Prediction model using ML algorithms to analyze and prevent
+          customer attrition, contributing to proactive retention strategies</li>
+              <li class="w3-padding-16">Logistic
+          Regression, Decision Tree Classifier, SVC, RandomForest Classifier, and K-Neighbors Classifier</li>
+          </div>
+          <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
+              </li>
+            </ul>
+          </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32"> Peer review web application</li>
-			<div style="height: 25vh;">
-          <li class="w3-padding-16">Application for reviewing and taking feedback on resumes and paper</li>
-          <li class="w3-padding-16">HTML, CSS, Javascript, React, NodeJS</li>
-			</div>
-		  <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
+          <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32"> Peer review web application</li>
+          <div style="height: 25vh;">
+              <li class="w3-padding-16">Application for reviewing and taking feedback on resumes and paper</li>
+              <li class="w3-padding-16">HTML, CSS, Javascript, React, NodeJS</li>
+          </div>
+          <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
+              </li>
+            </ul>
+          </div>
+        <!-- End Grid/Pricing tables -->
+        </div>
+
+        <div class="hidden-project">
+            <!-- one column -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+              <div class="w3-half w3-margin-bottom project-div">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> SUSPICIOUS OBJECT DETECTION</li>
+              <div style="height: 25vh;">
+              <li class="w3-padding-16">Used OpenCV for processing of videos, images and identifying the suspicious objects using background subtraction</li>
+                  <li class="w3-padding-16">ML, MOG, Computer Vision</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w3-half">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> LAND REGISTRATION USING HYPERLEDGER FABRIC</li>
+              <div style="height: 25vh;">
+                  <li class="w3-padding-16">Used docker in swarm mode to connect multiple systems and wrote chaincode in Go language; used couchdb for creating world state.</li>
+                  <li class="w3-padding-16">IPFS, Block-Chain, Docker</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- one column -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+              <div class="w3-half w3-margin-bottom project-div">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> IPFS(InterPlanetary File System) Query Optimization</li>
+              <div style="height: 25vh;">
+              <li class="w3-padding-16">Stored the land details in IPFS(which is peer to peer network for storing and sharing file in distributed system) and then optimized the query time in ipfs using summary file. Overall we have added search facility in ipfs in optimized manner</li>
+                  <li cla ss="w3-padding-16">IPFS, Block-Chain, Docker</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w3-half">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> STUDENT ASSIGNMENT PORTAL WITH NOTICE</li>
+              <div style="height: 25vh;">
+                  <li class="w3-padding-16">Used SQL database, PHP and html to create a platform for uploading assignment, submitting solution and branch-specific notice.</li>
+                  <li class="w3-padding-16">HTML,CSS, PHP, SQL</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- one column -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+              <div class="w3-half w3-margin-bottom project-div">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> CV maker</li>
+              <div style="height: 25vh;">
+              <li class="w3-padding-16">A website that helps you create your professional resumes in different templates. It also provides a dashboard for users to store their saved resumes.</li>
+                  <li cla ss="w3-padding-16">HTML,CSS, PHP, SQL</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w3-half">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> SECURE FILE TRANSFER DESKTOP APPLICATIONS</li>
+              <div style="height: 25vh;">
+                  <li class="w3-padding-16">Used java language and encryption method to build secure file transfer application. Used RSA and AES for encryption and sha256 for file digest.</li>
+                  <li class="w3-padding-16">Java, RSA,AES</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- one column -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+              <div class="w3-half w3-margin-bottom project-div">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> ARDUINO PROJECTS</li>
+              <div style="height: 25vh;overflow: auto;">
+                  <li class="w3-padding-16">A website that helps you create your professional resumes in different templates. It also provides a dashboard for users to store their saved resumes.</li>
+                  <li cla ss="w3-padding-16">CNC machine</li>
+                  <li cla ss="w3-padding-16">Home automation system</li>
+                  <li cla ss="w3-padding-16">Line following and object avoidance robot</li>
+                  <li cla ss="w3-padding-16">Wifi module, Bluetooth module, Arduino uno</li>
+              </div>
+              <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button id="show-less-btn-project" onclick="showLess('project')">Load Less</button>
+        <!-- project section end -->
+        </div>
+        <button id="load-more-btn-project" onclick="loadMore('project')">Load More</button>
     </div>
-    
   <!-- End About Section -->
   </div>
   
@@ -260,36 +383,44 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <script>
 	function loadMore(type) {
-		if(type=='education'){
-			var hiddenContent = document.querySelector('.hidden-education');
-   		 	var loadMoreBtn = document.getElementById('load-more-btn-education');
+
+		// if(type=='education'){
+			var hiddenContent = document.querySelector('.hidden-'+type);
+   		 	var loadMoreBtn = document.getElementById('load-more-btn-'+type);
     
 			hiddenContent.style.display = 'block';
 			loadMoreBtn.style.display = 'none';
-		}
-		if(type=='work'){
-			var hiddenContent = document.querySelector('.hidden-work');
-   		 	var loadMoreBtn = document.getElementById('load-more-btn-work');
+		// }
+		// if(type=='work'){
+		// 	var hiddenContent = document.querySelector('.hidden-work');
+   	// 	 	var loadMoreBtn = document.getElementById('load-more-btn-work');
     
-			hiddenContent.style.display = 'block';
-			loadMoreBtn.style.display = 'none';
-		}
+		// 	hiddenContent.style.display = 'block';
+		// 	loadMoreBtn.style.display = 'none';
+		// }
+    // if(type=='project'){
+		// 	var hiddenContent = document.querySelector('.hidden-project');
+   	// 	 	var loadMoreBtn = document.getElementById('load-more-btn-project');
+    
+		// 	hiddenContent.style.display = 'block';
+		// 	loadMoreBtn.style.display = 'none';
+		// }
     
   }
 
   function showLess(type) {
-	if(type=='education'){
-		var hiddenContent = document.querySelector('.hidden-education');
-    	var loadMoreBtn = document.getElementById('load-more-btn-education');
+	// if(type=='education'){
+		var hiddenContent = document.querySelector('.hidden-'+type);
+    	var loadMoreBtn = document.getElementById('load-more-btn-'+type);
 		hiddenContent.style.display = 'none';
 		loadMoreBtn.style.display = 'block';
-	}
-	if(type=='work'){
-		var hiddenContent = document.querySelector('.hidden-work');
-    	var loadMoreBtn = document.getElementById('load-more-btn-work');
-		hiddenContent.style.display = 'none';
-		loadMoreBtn.style.display = 'block';
-	}
+	// }
+	// if(type=='work'){
+	// 	var hiddenContent = document.querySelector('.hidden-work');
+  //   	var loadMoreBtn = document.getElementById('load-more-btn-work');
+	// 	hiddenContent.style.display = 'none';
+	// 	loadMoreBtn.style.display = 'block';
+	// }
    
   }
   </script>
