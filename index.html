@@ -1,432 +1,448 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Shekhar Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-		#Education-content-container{
-			.hidden-education {
-			display: none; /* Initially hide the additional content */
-			}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-			#load-more-btn-education {
-			display: block;
-			margin: 10px 0;
-			}
-		}
-		#Work-content-container{
-			.hidden-work {
-			display: none; /* Initially hide the additional content */
-			}
+  <title>Shekhar Kumar</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-			#load-more-btn-work {
-			display: block;
-			margin: 10px 0;
-			}
-		}
-    #Project-content-container{
-			.hidden-project {
-			display: none; /* Initially hide the additional content */
-			}
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-			#load-more-btn-project {
-			display: block;
-			margin: 10px 0;
-			}
-		}
-			
-</style>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="https://media.licdn.com/dms/image/D5603AQHyuXbTotqElQ/profile-displayphoto-shrink_800_800/0/1672762582033?e=1705536000&v=beta&t=VS65cn2-SJNduXAlWQyZNd1QKBuJr4XfyzdGCXOsBBw" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<body>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Shekhar Kumar.</h1>
-    <p>CS@Virginia Tech | Actively seeking for summer internship’24 | Web application development | Camunda</p>
-	<a href="https://www.linkedin.com/in/shekhark221/"><i class="fa fa-linkedin w3-xxlarge w3-hover-opacity"></i></a>
-  <a href="https://github.com/shekharmnnit"><i class="fa fa-github w3-xxlarge w3-hover-opacity"></i></a>
-    <img src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png" alt="boy" class="w3-image" width="200" height="200">
-  </header>
+      <h1><a href="index.html">Shekhar Kumar</a></h1>
+      <h2>I'm <span class="typed"
+          data-typed-items="A Full-Stack Developer."></span>
+      </h2>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <!-- work experience -->
-	
-    <!-- educartion -->
-	
-	<div id="Work-content-container">
-		<h2 class="w3-text-light-grey">Work experience</h2>
-		<hr style="width:200px" class="w3-opacity">
-		<h3>Senior software engineer- <b>GEP Worldwide</b></h3>
-		<p>I was responsible for creating and developing essential elements of an inventory management solution within an Advanced Shipping Notice web application. In my capacity as a senior software engineer, I provided leadership and direction to the development team, ensuring the successful implementation of the project's core features and alignment with project goals. I also oversaw multiple features from the design phase through to implementation. Furthermore, I optimized various workflow processes, including those related to shipments, search functionality, and push notifications.
-		</p>
-		<h3>Software engineer- <b>GEP Worldwide</b></h3>
-		
-		<div class="hidden-work">
-			<p>I served as a software developer. To improved project efficiency, I worked on the transformation of the project's architecture from a modular design to a more streamlined plugin-based structure in anguler. This strategic shift not only enhanced development efficiency but also resulted in a remarkable 40% reduction in development time. Additionally, I leveraged my technical skills to design and develop a user-friendly API/UI for managing forecast dates within the DemandPlanning project. I initiated and successfully implemented an automation system that efficiently read Excel data and seamlessly integrated it into Neo4j, effectively reducing manual workload by a substantial 60%. These experiences underscore my proficiency in software development, process optimization, and project management, showcasing my ability to drive innovation and efficiency in complex projects.
-			</p>
-			<button id="show-less-btn-work" onclick="showLess('work')">Load Less</button>
-		</div>
-  	</div>
-	  <button id="load-more-btn-work" onclick="loadMore('work')">Load More</button>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/shekhark221/" class="github"><i class="bi bi-github"></i></a>
+        <a href="Shekhar_Resume.pdf" class="headericon"
+          download="resume"><i class="bi bi-download"></i></a>
+      </div>
 
-	<div id="Education-content-container">
-		<h2 class="w3-text-light-grey">Education</h2>
-		<hr style="width:200px" class="w3-opacity">
-		<h3>Masters in computer science- <b>Virginia Tech, USA</b></h3>
-		<p>I am currently pursuing a Master of Engineering in Computer Science with a concentration in Software Development and applications. This program is designed to equip me with advanced knowledge and skills in computer science, specifically focusing on the development of software solutions and applications. </br></br>
-			I believe that my ongoing Master's program has equipped me with a strong foundation in software development and applications, making me a valuable candidate for roles that require a deep understanding of cutting-edge technologies and the ability to develop robust software solutions.		
-		</p>
-		<h3>Bachelor of technology- <b>Motilal Nehru National Institute of Technology Allahabad, India</b></h3>
-		<div class="hidden-education">
-			<p>Throughout my coursework, I have gained a deep understanding of software engineering principles, programming languages, and software architecture. I have had hands-on experience in designing and implementing software systems that meet the evolving needs of the digital landscape.</br></br>
-				This academic pursuit has not only broadened my theoretical knowledge but has also provided me with practical experience through job projects, and coursework assignments. I am passionate about leveraging my education to create innovative software solutions that can address real-world challenges and contribute to the ever-evolving field of computer science.	
-			</p>
-		<!-- Add more content as needed -->
-		<button id="show-less-btn-education" onclick="showLess('education')">Load Less</button>
-		</div>
-  	</div>
-	  <button id="load-more-btn-education" onclick="loadMore('education')">Load More</button>
-
-
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Web Development</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Angular</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide"> .Net Framework</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3 year</span><br>
-        Work Experience
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">20+</span><br>
-        Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5+</span><br>
-        Industry Project
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
+  </header><!-- End Header -->
 
-    <a href="Shekhar_Resume.pdf" download="Shekhar_Resume.pdf"><button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button></a>
-    
-    <div id="Project-content-container">
-        <!-- project section start -->
-        <!-- Grid for pricing tables -->
-        <h3 class="w3-padding-16 w3-text-light-grey">Projects</h3>
-        <div class="w3-row-padding" style="margin:0 -16px">
-          <div class="w3-half w3-margin-bottom project-div">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32"> Customer Churn Prediction</li>
-          <div style="height: 25vh;">
-          <li class="w3-padding-16">Developed a Customer Churn Prediction model using ML algorithms to analyze and prevent
-          customer attrition, contributing to proactive retention strategies</li>
-              <li class="w3-padding-16">Logistic
-          Regression, Decision Tree Classifier, SVC, RandomForest Classifier, and K-Neighbors Classifier</li>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Full Stack Developer</h3>
+          <p class="fst-italic">
+            Software Engineer with three years of experience and a demonstrated history of working on Web-based applications. 
+            Upcoming Software application and development graduate student at Virginia Tech. worked as a full-stack developer.
+             Worked on angular, elastic, .net. A Team player who is good at interacting with people of various backgroundsSoftware.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span>Falls Church,
+                    VA, USA</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Masters</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>mail address:</strong>
+                  <span>shekhark221@gmail.com</span>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Job:</strong> <span>Available</span></li>
+              </ul>
+            </div>
           </div>
-          <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
-              </li>
-            </ul>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">REACT JS <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
           </div>
 
-          <div class="w3-half">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32"> Peer review web application</li>
-          <div style="height: 25vh;">
-              <li class="w3-padding-16">Application for reviewing and taking feedback on resumes and paper</li>
-              <li class="w3-padding-16">HTML, CSS, Javascript, React, NodeJS</li>
+          <div class="progress">
+            <span class="skill">Angular <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
           </div>
-          <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
-              </li>
-            </ul>
+
+          <div class="progress">
+            <span class="skill"> .Net framework <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
           </div>
-        <!-- End Grid/Pricing tables -->
+
+          <div class="progress">
+            <span class="skill">Camunda <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Node.js <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">ElasticSearch <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="hidden-project">
-            <!-- one column -->
-            <div class="w3-row-padding" style="margin:0 -16px">
-              <div class="w3-half w3-margin-bottom project-div">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> SUSPICIOUS OBJECT DETECTION</li>
-              <div style="height: 25vh;">
-              <li class="w3-padding-16">Used OpenCV for processing of videos, images and identifying the suspicious objects using background subtraction</li>
-                  <li class="w3-padding-16">ML, MOG, Computer Vision</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
-                  </li>
-                </ul>
-              </div>
+        <div class="col-lg-6">
 
-              <div class="w3-half">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> LAND REGISTRATION USING HYPERLEDGER FABRIC</li>
-              <div style="height: 25vh;">
-                  <li class="w3-padding-16">Used docker in swarm mode to connect multiple systems and wrote chaincode in Go language; used couchdb for creating world state.</li>
-                  <li class="w3-padding-16">IPFS, Block-Chain, Docker</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
-                  </li>
-                </ul>
+          <div class="progress">
+            <span class="skill">NODE JS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
               </div>
             </div>
+          </div>
 
-            <!-- one column -->
-            <div class="w3-row-padding" style="margin:0 -16px">
-              <div class="w3-half w3-margin-bottom project-div">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> IPFS(InterPlanetary File System) Query Optimization</li>
-              <div style="height: 25vh;">
-              <li class="w3-padding-16">Stored the land details in IPFS(which is peer to peer network for storing and sharing file in distributed system) and then optimized the query time in ipfs using summary file. Overall we have added search facility in ipfs in optimized manner</li>
-                  <li cla ss="w3-padding-16">IPFS, Block-Chain, Docker</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="w3-half">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> STUDENT ASSIGNMENT PORTAL WITH NOTICE</li>
-              <div style="height: 25vh;">
-                  <li class="w3-padding-16">Used SQL database, PHP and html to create a platform for uploading assignment, submitting solution and branch-specific notice.</li>
-                  <li class="w3-padding-16">HTML,CSS, PHP, SQL</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- one column -->
-            <div class="w3-row-padding" style="margin:0 -16px">
-              <div class="w3-half w3-margin-bottom project-div">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> CV maker</li>
-              <div style="height: 25vh;">
-              <li class="w3-padding-16">A website that helps you create your professional resumes in different templates. It also provides a dashboard for users to store their saved resumes.</li>
-                  <li cla ss="w3-padding-16">HTML,CSS, PHP, SQL</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="w3-half">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> SECURE FILE TRANSFER DESKTOP APPLICATIONS</li>
-              <div style="height: 25vh;">
-                  <li class="w3-padding-16">Used java language and encryption method to build secure file transfer application. Used RSA and AES for encryption and sha256 for file digest.</li>
-                  <li class="w3-padding-16">Java, RSA,AES</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">git link</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- one column -->
-            <div class="w3-row-padding" style="margin:0 -16px">
-              <div class="w3-half w3-margin-bottom project-div">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32"> ARDUINO PROJECTS</li>
-              <div style="height: 25vh;overflow: auto;">
-                  <li class="w3-padding-16">A website that helps you create your professional resumes in different templates. It also provides a dashboard for users to store their saved resumes.</li>
-                  <li cla ss="w3-padding-16">CNC machine</li>
-                  <li cla ss="w3-padding-16">Home automation system</li>
-                  <li cla ss="w3-padding-16">Line following and object avoidance robot</li>
-                  <li cla ss="w3-padding-16">Wifi module, Bluetooth module, Arduino uno</li>
-              </div>
-              <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Git-link</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button id="show-less-btn-project" onclick="showLess('project')">Load Less</button>
-        <!-- project section end -->
         </div>
-        <button id="load-more-btn-project" onclick="loadMore('project')">Load More</button>
-    </div>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <!-- <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
       </div>
 
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
+    </div><!-- End Skills -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
       </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Shekhar Kumar</h4>
+            <p><em>Software Engineer with three years of experience and a demonstrated history of working on Web-based applications. 
+              Upcoming Software application and development graduate student at Virginia Tech.
+               worked as a full-stack developer. Worked on angular, elastic, .net. A Team player who 
+               is good at interacting with people of various backgroundsSoftware.</em>
+            </p>
+            <p>
+            <ul>
+              <li></li>Falls Church, VA, USA
+              <li>shekhark221@gmail.com</li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Master's degree in Computer Science</h4>
+            <h5>2023 - Present</h5>
+            <p><em>Virginia Tech, VA, USA</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Bachelor's degree in Computer Science</h4>
+            <h5>2016 - 2020</h5>
+            <p><em>Motilal Nehru National Institute Of Technology, India</em></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Senior Software Engineer</h4>
+            <h5>July 2022 – July 2023</h5>
+            <p><em>GEP Worldwide, Hyderabad, India </em></p>
+            <p>
+            <ul>
+              <li> Led the implementation of front-end components that made us deliver Advanced shipping notice project
+                x3 times faster without growing the team, as well as maintaining the product efficiently.</li>
+              <li> Workflow : Designed workflow and developed an inventory management solution for Advanced shipping notice
+                web application using .Net, Angular, and Elasticsearch.
+              </li>
+              <li>Elasticsearch: Migrated database from SQL to Elasticsearch, optimizing search feature by 60% and reducing
+                development time by 30%.
+              </li>
+              <li>Low-code no-code: Restructured project from plugin architecture to low-code no-code architecture, which
+                reduced the development time by 25%.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4> Software Engineer</h4>
+            <h5> July 2020 – June 2022</h5>
+            <p><em>
+               GEP Worldwide, Hyderabad, India
+              </em></p>
+            <p>
+            <ul>
+              <li> Forecast : Developed a dashboard to present and manipulate forecast data, enhancing product trend
+                understanding and boosting client productivity by 30%.</li>
+              <li>Web applications: Built and maintained complex web applications using Angular, leveraging its robust features
+                and modular architecture to create scalable and efficient solutions.
+              </li>
+              <li>Plugin-based architecture: Transformed the project architecture from a Modular structure to a more efficient
+                Plugin-based architecture, leading to a 40% decrease in development time. The Plugin architecture emphasized the
+                creation of reusable components across the entire project.</li>
+              <li> API: Built the API using elastic search and SQL, SQL to get the forecast data, and elastic search to store the
+                application configuration.
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div> -->
+  </section><!-- End Resume Section -->
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Falls Church, Virginia, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00000000</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: shekhark221@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> feature under development
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-    
-    <a href="https://github.com/shekharmnnit"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/shekhark221/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    
-  <!-- End footer -->
-  </footer>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <!-- <li data-filter=".filter-react">React</li>
+            <li data-filter=".filter-shopify">Shopify</li>
+            <li data-filter=".filter-blockchain">Blockchain</li>
+            <li data-filter=".filter-next">Next.js</li>
+            <li data-filter=".filter-gatsby">GatsbyJS</li>
+            <li data-filter=".filter-angular">Angular</li>
+            <li data-filter=".filter-vue">Vue</li>
+            <li data-filter=".filter-nuxt">Nuxt.js</li>
+            <li data-filter=".filter-svelte">Svelte</li>
+            <li data-filter=".filter-laravel">Laravel</li>
+            <li data-filter=".filter-wordpress">WordPress</li> -->
+          </ul>
+        </div>
+      </div>
 
-<!-- END PAGE CONTENT -->
-</div>
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-shopify">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid portfolio-hoverimg hoverlength1" alt="">
+            <div class="portfolio-info">
+              <h4>Customer Churn Prediction</h4>
+              <p><a href="https://github.com/shekharmnnit/ML">https://github.com/shekharmnnit/ML</a></p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details7.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                  title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<script>
-	function loadMore(type) {
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-gatsby filter-react filter-blockchain">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid portfolio-hoverimg hoverlength1" alt="">
+            <div class="portfolio-info">
+              <h4>masterbrews</h4>
+              <p><a href="https://masterbrews.com/">https://masterbrews.com/</a></p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details8.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                  title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-		// if(type=='education'){
-			var hiddenContent = document.querySelector('.hidden-'+type);
-   		 	var loadMoreBtn = document.getElementById('load-more-btn-'+type);
-    
-			hiddenContent.style.display = 'block';
-			loadMoreBtn.style.display = 'none';
-		// }
-		// if(type=='work'){
-		// 	var hiddenContent = document.querySelector('.hidden-work');
-   	// 	 	var loadMoreBtn = document.getElementById('load-more-btn-work');
-    
-		// 	hiddenContent.style.display = 'block';
-		// 	loadMoreBtn.style.display = 'none';
-		// }
-    // if(type=='project'){
-		// 	var hiddenContent = document.querySelector('.hidden-project');
-   	// 	 	var loadMoreBtn = document.getElementById('load-more-btn-project');
-    
-		// 	hiddenContent.style.display = 'block';
-		// 	loadMoreBtn.style.display = 'none';
-		// }
-    
-  }
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid portfolio-hoverimg hoverlength1" alt="">
+            <div class="portfolio-info">
+              <h4>wislerplumbing</h4>
+              <p><a href="https://www.wislerplumbingandair.com/">https://www.wislerplumbingandair.com/</a></p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details10.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                  title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-  function showLess(type) {
-	// if(type=='education'){
-		var hiddenContent = document.querySelector('.hidden-'+type);
-    	var loadMoreBtn = document.getElementById('load-more-btn-'+type);
-		hiddenContent.style.display = 'none';
-		loadMoreBtn.style.display = 'block';
-	// }
-	// if(type=='work'){
-	// 	var hiddenContent = document.querySelector('.hidden-work');
-  //   	var loadMoreBtn = document.getElementById('load-more-btn-work');
-	// 	hiddenContent.style.display = 'none';
-	// 	loadMoreBtn.style.display = 'block';
-	// }
-   
-  }
-  </script>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Falls church, VA, USA</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://github.com/shekharmnnit" class="github"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/shekhark221/" class="linkedIn"><i class="bi bi-linkedin"></i></a>
+              <!-- <a href="https://join.skype.com/ROrKW823O5Xd" class="skype"><i class="bi bi-skype"></i></a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>shekhark221@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/xzblwjeb" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
